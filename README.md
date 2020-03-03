@@ -17,6 +17,8 @@ It's pretty simple process to create your own local version, which is outlined b
 * Move the python script
 * Set a cronjob to run the python script every 24 hours
 
+You can find more details in setting up a local version here, in my Medium article: https://medium.com/@tom__dell/creating-your-own-cvel-87331d5aa16e
+
 # New Feeds 
 If you want to use a new feed, you'll need to write another parser, and add another function in the python script to download all vulnerabilities modified in the last 24 hours and trigger the new parser.
 
