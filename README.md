@@ -19,3 +19,10 @@ It's pretty simple process to create your own local version, which is outlined b
 
 # New Feeds 
 If you want to use a new feed, you'll need to write another parser, and add another function in the python script to download all vulnerabilities modified in the last 24 hours and trigger the new parser.
+
+# To-Do
+* Write the downloader script to download the CVEs modified in the last 24 houws for NVD
+* Finish the CIRCL parser (includes matching the field names to a standardised format matching the NVD data)
+* Add the CIRCL downloader to the python script
+* Write a CVE-Details parser
+* Add the CVE-Details downloader to the python script
