@@ -1,0 +1,398 @@
+PUT /nvd
+{
+  "mappings": {
+      "properties": {
+        "@timestamp": {
+          "type": "date"
+        },
+        "@version": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "Affected_Products": {
+          "type": "nested",
+          "properties": {
+            "cpe_match": {
+              "properties": {
+                "cpe23Uri": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "versionEndExcluding": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "versionStartIncluding": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "vulnerable": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "operator": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "CVE": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "CVE_Timestamp": {
+          "type": "date"
+        },
+        "Description": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "LastModifiedDate": {
+          "type": "date"
+        },
+        "PublishedDate": {
+          "type": "date"
+        },
+        "References": {
+          "type": "nested",
+          "properties": {
+            "name": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "refsource": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "tags": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "url": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "baseMetricV2_acInsufInfo": {
+          "type": "boolean"
+        },
+        "baseMetricV2_cvssV2_accessComplexity": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV2_cvssV2_accessVector": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV2_cvssV2_authentication": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV2_cvssV2_availabilityImpact": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV2_cvssV2_baseScore": {
+          "type": "float"
+        },
+        "baseMetricV2_cvssV2_confidentialityImpact": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV2_cvssV2_integrityImpact": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV2_cvssV2_vectorString": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV2_cvssV2_version": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV2_exploitabilityScore": {
+          "type": "float"
+        },
+        "baseMetricV2_impactScore": {
+          "type": "float"
+        },
+        "baseMetricV2_obtainAllPrivilege": {
+          "type": "boolean"
+        },
+        "baseMetricV2_obtainOtherPrivilege": {
+          "type": "boolean"
+        },
+        "baseMetricV2_obtainUserPrivilege": {
+          "type": "boolean"
+        },
+        "baseMetricV2_severity": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV2_userInteractionRequired": {
+          "type": "boolean"
+        },
+        "baseMetricV3_attackComplexity": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV3_attackVector": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV3_availabilityImpact": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV3_baseScore": {
+          "type": "float"
+        },
+        "baseMetricV3_baseSeverity": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV3_confidentialityImpact": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV3_exploitabilityScore": {
+          "type": "float"
+        },
+        "baseMetricV3_impactScore": {
+          "type": "float"
+        },
+        "baseMetricV3_integrityImpact": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV3_privilegesRequired": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV3_scope": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV3_userInteraction": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV3_vectorString": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "baseMetricV3_version": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "result": {
+          "properties": {
+            "CVE_Items": {
+              "properties": {
+                "configurations": {
+                  "type": "object"
+                },
+                "cve": {
+                  "properties": {
+                    "CVE_data_meta": {
+                      "type": "object"
+                    },
+                    "description": {
+                      "properties": {
+                        "description_data": {
+                          "type": "object"
+                        }
+                      }
+                    },
+                    "problemtype": {
+                      "type": "object"
+                    },
+                    "references": {
+                      "type": "object"
+                    }
+                  }
+                },
+                "impact": {
+                  "properties": {
+                    "baseMetricV2": {
+                      "properties": {
+                        "cvssV2": {
+                          "type": "object"
+                        }
+                      }
+                    },
+                    "baseMetricV3": {
+                      "properties": {
+                        "cvssV3": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
