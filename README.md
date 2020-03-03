@@ -11,7 +11,7 @@ It's pretty simple process to create your own local version, which is outlined b
   * /home/cvelk
   * /home/cvelk/vulnerabilities
   * /home/cvelk/vulnerabilities/nvd
-  * /home/cvelk/vulnerabilities/nvd
+  * /home/cvelk/vulnerabilities/circl
     * and so on for each feed
 * Move the parsers to /home/cvelk/
 * Move the python script
