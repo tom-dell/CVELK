@@ -7,14 +7,7 @@ C.V.E.L.K. is a completely free and open-source tool you can use to ingest open-
 It's pretty simple process to create your own local version, which is outlined below.
 
 * Install and configure the ELK stack
-* Create the following directories
-  * /home/cvelk/
-  * /home/cvelk/vulnerabilities/
-  * /home/cvelk/vulnerabilities/nvd/
-  * /home/cvelk/vulnerabilities/circl/
-    * and so on for each feed
-* Move the parsers to /home/cvelk/
-* Move the python script to /home/cvelk/
+* Clone this repo into /home/
 * Set a cronjob to run the python downloader script every hour
 
 You can find more details in setting up a local version here, in my Medium article: https://medium.com/@tom__dell/creating-your-own-cvel-87331d5aa16e
