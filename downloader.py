@@ -3,7 +3,7 @@ import requests
 
 def nvd():
     # save the date of 24 hours ago as last_mod_date, then format it for use in the API call
-    last_mod_date = str(datetime.today() - timedelta(days=1))[:-3]
+    last_mod_date = str(datetime.today() - timedelta(hours=1))[:-3]
     last_mod_date = (last_mod_date.replace(".", ":").replace(" ", "T") + "%20UTC%2B10:00")
     url = "https://services.nvd.nist.gov/rest/json/cves/1.0?modStartDate="
     page_limit = "&resultsPerPage=2000"
