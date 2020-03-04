@@ -8,6 +8,7 @@ It's pretty simple process to create your own local version, which is outlined b
 
 * Install and configure the ELK stack
 * Clone this repo into /home/
+* Apply the mappings to the indexs in ElasticSearch
 * Set a cronjob to run the python downloader script every hour
 
 You can find more details in setting up a local version here, in my Medium article: https://medium.com/@tom__dell/creating-your-own-cvel-87331d5aa16e
