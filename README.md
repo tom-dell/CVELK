@@ -22,4 +22,4 @@ You can find more details in setting up a local version here, in my Medium artic
 # New Feeds 
 If you want to use a new feed, you'll need to write another parser, and add another function in the python script to download all vulnerabilities modified in the last 24 hours and trigger the new parser.
 
-If you can't figure out how to write a parser for a specific feed, make a issue and include a single vulnerability (preferable CVE-2019-14889) with the headers and footers, and I'll write a parser for you.
+If you can't figure out how to write a parser for a specific feed, make a issue and include a single vulnerability (preferable CVE-2019-14889) with the headers and footers, and I'll write a parser for you, or reach out to me on Twitter [@tom__dell](https://twitter.com/tom__dell).
