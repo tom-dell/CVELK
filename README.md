@@ -8,6 +8,7 @@ It's pretty simple process to create your own local version, which is outlined b
 
 * Install and configure the ELK stack
 * Clone this repo into /home/ 
+* Make downloader.py executable
 * Apply the mappings to the indices in ElasticSearch
 * Set a cronjob to run the python downloader script every hour
 
