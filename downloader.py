@@ -9,10 +9,10 @@ def nvd():
     page_limit = "&resultsPerPage=2000"
     nvd_vulns = requests.get(url + last_mod_date + page_limit)
     # open and save nvd_$date, then save the response
-    todays_vulns = open("/home/cvelk/vulnerabilities/nvd/nvd_" + str(datetime.today()) + ".txt", "w+")
+    todays_vulns = open("/home/CVELK/vulnerabilities/nvd/nvd_" + str(datetime.today()) + ".txt", "w+")
     todays_vulns.write(nvd_vulns.text)
     todays_vulns.close()
-    # run "sudo /usr/share/bin/logstash -f /home/cvelk/logstash_parsers/nvd.conf"
+    os.system("sudo /usr/share/logstash/bin/logstash -f /home/CVELK/logstash_parsers/nvd.conf")
 
 
 def circl():
