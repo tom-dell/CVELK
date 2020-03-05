@@ -7,7 +7,7 @@ C.V.E.L.K. is a completely free and open-source tool you can use to ingest open-
 It's pretty simple process to create your own local version, which is outlined below.
 
 * Install and configure the ELK stack
-* Clone this repo into /home/ and rename it to "cvelk"
+* Clone this repo into /home/ 
 * Apply the mappings to the indices in ElasticSearch
 * Set a cronjob to run the python downloader script every hour
 
