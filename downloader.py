@@ -14,7 +14,7 @@ def nvd():
     todays_vulns = open("/home/CVELK/vulnerabilities/nvd/nvd_" + now + ".json", "w+")
     todays_vulns.write(nvd_vulns.text)
     todays_vulns.close()
-    os.system("sudo /usr/share/logstash/bin/logstash -f /home/CVELK/logstash_parsers/nvd.conf < /home/CVELK//vulnerabilities/nvd/nvd_" + now + ".json")
+    os.system("sudo /usr/share/logstash/bin/logstash -f /home/CVELK/logstash_parsers/nvd.conf < /home/CVELK/vulnerabilities/nvd/nvd_" + now + ".json")
 
 
 def circl():
