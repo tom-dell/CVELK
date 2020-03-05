@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
 import requests
+import os
 
 def nvd():
     # save the date of 24 hours ago as last_mod_date, then format it for use in the API call
