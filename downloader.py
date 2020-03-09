@@ -9,6 +9,9 @@ def nvd():
     url = "https://services.nvd.nist.gov/rest/json/cves/1.0?modStartDate="
     page_limit = "&resultsPerPage=2000"
     nvd_vulns = requests.get(url + last_mod_date + page_limit)
+    
+    # it total_results =0  then break
+    
     # open and save nvd_$date, then save the response
     now = str(datetime.today()).replace(" ", "_")
     todays_vulns = open("/home/CVELK/vulnerabilities/nvd/nvd_" + now + ".json", "w+")
