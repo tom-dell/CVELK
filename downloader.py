@@ -20,8 +20,4 @@ def nvd():
     os.system("sudo /usr/share/logstash/bin/logstash -f /home/CVELK/logstash_parsers/nvd.conf < /home/CVELK/vulnerabilities/nvd/nvd_" + now + ".json")
 
 
-def circl():
-    # we grab the datetime again, in case the first function takes a while to run
-    last_mod_date = str(datetime.today() - timedelta(days=1))[:-3]
-
 nvd()
